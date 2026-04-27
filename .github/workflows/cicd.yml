@@ -2,10 +2,22 @@
 name: CI/CD TI323
 
 on: # como sera o gatilho
-  push: # quando ocorrer um push
+ push: # quando ocorrer um push
       branches: [ main ] # para a branch main
       paths: # para os arquivos
         - 'projeto/**' # para arquivos dentro da pasta projeto
+
+ workflow_dispatch: # para permitir execução manual do workflow
+  inputs:
+    environment:
+      description: 'Ambiente de implantação'
+      type: choice
+      required: true
+      default: 'dev'
+      options:
+        - dev
+        - staging
+        - production
 
 jobs: # trabalho a ser realizado
   informacao_sistema:
