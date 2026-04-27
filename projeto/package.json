@@ -1,0 +1,28 @@
+{
+  "name": "aula_tec",
+  "version": "1.0.0",
+  "description": "Exemplo gitActions",
+  "keywords": [
+    "actions",
+    "node"
+  ],
+  "homepage": "https://github.com/VictorDev72/Ti_323_SpringBoot#readme",
+  "bugs": {
+    "url": "https://github.com/VictorDev72/Ti_323_SpringBoot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorDev72/Ti_323_SpringBoot.git"
+  },
+  "license": "ISC",
+  "author": "Victor",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
