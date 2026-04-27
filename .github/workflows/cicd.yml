@@ -1,0 +1,11 @@
+# arquivo para ci/cd AULA TI323 2026
+name: CI/CD TI323
+
+on: [push] # como sera o gatilho
+
+jobs: # trabalho a ser realizado
+  informacao_sistema:
+    runs-on: ubuntu-latest
+    steps: # passo a serem executados 
+      - name: Lista o diretorio corrente
+        run: ls -la
